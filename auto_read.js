@@ -18,7 +18,6 @@ function Get_ResponseInfo()
 //修改消息体
 function Change_ResponseBody()
 {
-    var RespnseBodyData = $response.body
-    let RespnseBodyData.replace("</script>","setTimeout(()=>window.history.back(),8000);</script>");
+    let RespnseBodyData = $response.body.replace("</script>","setTimeout(()=>window.history.back(),8000);</script>");
     $done({RespnseBodyData});//修改完成之后需要调用$done
 }
