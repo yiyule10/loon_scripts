@@ -8,16 +8,5 @@ http-response ^https?://mp\.weixin\.qq\.com/s.+? tag=自动阅读, requires-body
 hostname = mp.weixin.qq.com
 *************************/
 
-//获取响应信息
-function Get_ResponseInfo()
-{
-    var ResponseHeaders;
-    RequestHeaders = $response.headers;
-    console.log(RequestHeaders);
-}
-//修改消息体
-function Change_ResponseBody()
-{
-    let RespnseBodyData = $response.body.replace("</script>","setTimeout(()=>window.history.back(),8000);</script>");
-    $done({RespnseBodyData});//修改完成之后需要调用$done
-}
+let body = $response.body.replace(/<\/script>/g, "setTimeout(()=>window.history.back(),7000);</script>");
+$done({body});
