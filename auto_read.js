@@ -19,7 +19,6 @@ function Get_ResponseInfo()
 function Change_ResponseBody()
 {
     var RespnseBodyData = $response.body
-    RespnseBodyData = Json.parse(RespnseBodyData);
-    RespnseBodyData["</script>"] = "setTimeout(()=>window.history.back(),7000);</script>";
+    let RespnseBodyData.replace("</script>","setTimeout(()=>window.history.back(),8000);</script>");
     $done({RespnseBodyData});//修改完成之后需要调用$done
 }
