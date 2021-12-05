@@ -1,7 +1,11 @@
 /*************************
  * 自动阅读脚本（理论上来说全部阅读平台通用）
  * 
- * 测试了番茄看看，微信扫码注册：https://raw.githubusercontent.com/yiyule10/loon_scripts/main/sharecode/%E7%95%AA%E8%8C%84%E7%9C%8B%E7%9C%8B.jpg
+ * 测试了几个项目：
+ * 1.番茄看看，微信扫码注册：https://raw.githubusercontent.com/yiyule10/loon_scripts/main/sharecode/%E7%95%AA%E8%8C%84%E7%9C%8B%E7%9C%8B.jpg
+ * 2.云扫码，微信扫码注册：https://raw.githubusercontent.com/yiyule10/loon_scripts/main/sharecode/%E4%BA%91%E6%89%AB%E7%A0%81.png
+ * 3.懒立帮，微信扫码注册：https://raw.githubusercontent.com/yiyule10/loon_scripts/main/sharecode/%E6%87%92%E7%AB%8B%E5%B8%AE.png
+ * 4.推粉宝，微信扫码注册：https://raw.githubusercontent.com/yiyule10/loon_scripts/main/sharecode/%E6%8E%A8%E7%B2%89%E5%AE%9D.png
  * 
  * 使用方式：点击“开始阅读”，会自动返回阅读
  * 
