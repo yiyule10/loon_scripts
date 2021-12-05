@@ -3,6 +3,9 @@
  * 
  * 测试了番茄看看，微信扫码注册：https://raw.githubusercontent.com/yiyule10/loon_scripts/main/sharecode/%E7%95%AA%E8%8C%84%E7%9C%8B%E7%9C%8B.jpg
  * 
+ * 使用方式：点击“开始阅读”，会自动返回阅读
+ * 
+ * 
  * 只测试了loon
  * surge和QX自行测试
  * QX似乎直接添加到重写就行
