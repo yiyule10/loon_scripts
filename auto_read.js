@@ -2,7 +2,7 @@
 Loon:
 
 [Script]
-http-response ^https?://mp\.weixin\.qq\.com/s.+? tag=自动阅读, response-body=true
+http-response ^https?://mp\.weixin\.qq\.com/s.+? tag=自动阅读, response-body=true, script-path=https://raw.githubusercontent.com/yiyule10/loon_scripts/main/auto_read.js
 
 [mitm]
 hostname = mp.weixin.qq.com
@@ -20,5 +20,5 @@ function Change_ResponseBody()
     var RespnseBodyData = $response.body
     RespnseBodyData = Json.parse(RespnseBodyData);
     RespnseBodyData["</script>"] = "setTimeout(()=>window.history.back(),10000);</script>";
-    $done({RespnseBodyData});
+    $done({RespnseBodyData});//修改完成之后需要调用$done
 }
